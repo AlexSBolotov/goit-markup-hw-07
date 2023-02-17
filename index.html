@@ -13,17 +13,20 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/var.css" />
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/mobile.css" />
+    <link rel="stylesheet" href="./css/tablet.css" />
+    <link rel="stylesheet" href="./css/desktop.css" />
+    <!-- <link rel="stylesheet" href="./css/styles.css" /> -->
   </head>
   <body>
     <header class="header">
       <div class="container header-box">
         <nav class="main-nav">
-          <!-- Logo -->
           <a href="./index.html" class="header-logo">
             <span class="header-logo-part">WEB</span>STUDIO
           </a>
-          <!-- Site navigation -->
           <ul class="main-nav-list list">
             <li class="main-nav-item">
               <a class="main-nav-link current" href="./index.html">Studio</a>
@@ -36,9 +39,6 @@
             </li>
           </ul>
         </nav>
-
-        <!-- Address block -->
-
         <address>
           <ul class="address-list list">
             <li>
@@ -53,6 +53,16 @@
             </li>
           </ul>
         </address>
+
+        <button
+          class="header-mob-btn js-open-menu"
+          type="button"
+          aria-expanded="false"
+        >
+          <svg class="header-mob-icon" width="32" height="22">
+            <use href="./images/icons.svg#icon-menu-hamburger"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <main>
@@ -68,7 +78,6 @@
       <!-- Features section -->
       <section class="section">
         <div class="container">
-          <!-- Hidden title -->
           <h2 class="visually-hidden">Our Features</h2>
           <ul class="features-list list">
             <li class="features-item">
@@ -157,7 +166,6 @@
               <div class="team-card-content">
                 <h3 class="section-subtitle">Mark Guerrero</h3>
                 <p class="section-text">Product Designer</p>
-                <!-- Social Networks -->
                 <ul class="team-socials list">
                   <li>
                     <a href="" class="team-socials-item" aria-label="Instagram">
@@ -195,7 +203,6 @@
               <div class="team-card-content">
                 <h3 class="section-subtitle">Tom Ford</h3>
                 <p class="section-text">Frontend Developer</p>
-                <!-- Social Networks -->
                 <ul class="team-socials list">
                   <li>
                     <a href="" class="team-socials-item" aria-label="Instagram">
@@ -237,7 +244,6 @@
               <div class="team-card-content">
                 <h3 class="section-subtitle">Camila Garcia</h3>
                 <p class="section-text">Marketing</p>
-                <!-- Social Networks -->
                 <ul class="team-socials list">
                   <li>
                     <a href="" class="team-socials-item" aria-label="Instagram">
@@ -279,7 +285,6 @@
               <div class="team-card-content">
                 <h3 class="section-subtitle">Daniel Wilson</h3>
                 <p class="section-text">UI Designer</p>
-                <!-- Social Networks -->
                 <ul class="team-socials list">
                   <li>
                     <a href="" class="team-socials-item" aria-label="Instagram">
@@ -322,42 +327,42 @@
           <ul class="customers-list list">
             <li class="customers-item">
               <a class="customers-link" href="">
-                <svg class="customers-icon" width="104" height="56">
+                <svg class="customers-icon">
                   <use href="./images/icons.svg#icon-client-1"></use>
                 </svg>
               </a>
             </li>
             <li class="customers-item">
               <a class="customers-link" href="">
-                <svg class="customers-icon" width="104" height="56">
+                <svg class="customers-icon">
                   <use href="./images/icons.svg#icon-client-2"></use>
                 </svg>
               </a>
             </li>
             <li class="customers-item">
               <a class="customers-link" href="">
-                <svg class="customers-icon" width="104" height="56">
+                <svg class="customers-icon">
                   <use href="./images/icons.svg#icon-client-3"></use>
                 </svg>
               </a>
             </li>
             <li class="customers-item">
               <a class="customers-link" href="">
-                <svg class="customers-icon" width="104" height="56">
+                <svg class="customers-icon">
                   <use href="./images/icons.svg#icon-client-4"></use>
                 </svg>
               </a>
             </li>
             <li class="customers-item">
               <a class="customers-link" href="">
-                <svg class="customers-icon" width="104" height="56">
+                <svg class="customers-icon">
                   <use href="./images/icons.svg#icon-client-5"></use>
                 </svg>
               </a>
             </li>
             <li class="customers-item">
               <a class="customers-link" href="">
-                <svg class="customers-icon" width="104" height="56">
+                <svg class="customers-icon">
                   <use href="./images/icons.svg#icon-client-6"></use>
                 </svg>
               </a>
@@ -366,7 +371,8 @@
         </div>
       </section>
     </main>
-    <footer class="footer">
+    <!-- =================Footer================ -->
+    <footer class="section footer">
       <div class="container footer-box">
         <div class="footer-item">
           <a href="./index.html" class="footer-logo">
@@ -379,7 +385,6 @@
         </div>
         <div class="footer-socials">
           <p class="footer-socials-text">Social media</p>
-          <!-- Social Networks -->
           <ul class="footer-socials-list list">
             <li class="item">
               <a href="" class="footer-socials-item" aria-label="Instagram">
@@ -512,8 +517,8 @@
                   <use href="./images/icons.svg#icon-tick"></use>
                 </svg> </span
               >I accept the terms and conditions of the
-              <a href="" class="modal-form-link"> Privacy Policy</a></label
-            >
+              <a href="" class="modal-form-link"> Privacy Policy</a>
+            </label>
           </div>
           <button class="modal-form-submit" type="submit">Send</button>
         </form>
@@ -525,6 +530,82 @@
         </button>
       </div>
     </div>
+
+    <!-- ----Mob menu---- -->
+
+    <div class="mob-menu-container js-menu-container" id="mobile-menu">
+      <nav>
+        <ul class="mob-menu-list list">
+          <li class="mob-menu-item">
+            <a class="mob-menu-link current" href="./index.html">Studio</a>
+          </li>
+          <li class="mob-menu-item">
+            <a class="mob-menu-link" href="./portfolio.html">Portfolio</a>
+          </li>
+          <li class="mob-menu-item">
+            <a class="mob-menu-link" href="">Contacts</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="mod-menu-wrap">
+        <address>
+          <ul class="mob-address-list list">
+            <li>
+              <a class="mob-address-tel" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+            <li>
+              <a class="mob-address-link" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+        </address>
+        <ul class="mob-socials list">
+          <li>
+            <a href="" class="mob-socials-item" aria-label="Instagram">
+              <svg class="mob-socials-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="" class="mob-socials-item" aria-label="Twitter">
+              <svg class="mob-socials-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="" class="mob-socials-item" aria-label="Facebook">
+              <svg class="mob-socials-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="" class="mob-socials-item" aria-label="LinkedIn">
+              <svg class="mob-socials-icon" width="16" height="16">
+                <use href="./images/icons.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <button type="button" class="mob-btn js-close-menu">
+        <svg class="mob-btn-icon" width="8" height="8">
+          <use href="./images/icons.svg#icon-close-black"></use>
+        </svg>
+      </button>
+    </div>
+    <!-- <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script> -->
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>
