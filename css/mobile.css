@@ -98,7 +98,7 @@
   margin-right: auto;
 
   background-image: linear-gradient(var(--hero-bgc), var(--hero-bgc)),
-    url(../images/hero-bg-image.jpg);
+    url(../images/01-hero/mob-hero-bg.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -106,6 +106,15 @@
   background-color: var(--hero-bgc);
 
   text-align: center;
+}
+@media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(var(--hero-bgc), var(--hero-bgc)),
+      url("../images/01-hero/mob-hero-bg@2x.jpg");
+  }
 }
 .hero-title {
   max-width: 320px;
@@ -775,6 +784,18 @@
 }
 
 @media screen and (min-width: 480px) {
+  .hero {
+    background-image: linear-gradient(var(--hero-bgc), var(--hero-bgc)),
+      url(../images/01-hero/tab-hero-bg.jpg);
+  }
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero { linear-gradient(var(--hero-bgc), var(--hero-bgc)),
+      background-image: url("../images/01-hero/tab-hero-bg@2x.jpg");
+    }
+  }
   .mob-socials {
     gap: 56px;
     justify-content: center;
