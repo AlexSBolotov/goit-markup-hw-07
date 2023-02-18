@@ -1,3 +1,5 @@
+/* ================Header================= */
+
 .main-nav-item:not(:last-child) {
   margin-right: 40px;
 }
@@ -61,6 +63,7 @@
   }
 
   /* Header */
+
   .header-logo {
     margin-right: 120px;
   }
@@ -78,10 +81,13 @@
   .header-mob-btn {
     display: none;
   }
+
   /* Mob Menu */
+
   .mob-menu-container {
     display: none;
   }
+
   /* Hero */
 
   .hero {
@@ -105,8 +111,12 @@
     text-align: left;
   }
 
-  /* ==================OurTeam================== */
+  /* OurTeam */
 
+  .team > .container {
+    padding-left: 108px;
+    padding-right: 108px;
+  }
   .team-list {
     flex-direction: row;
     row-gap: 64px;
@@ -116,8 +126,12 @@
     max-width: calc((100% - 24px) / 2);
   }
 
-  /* ==================Customers section================== */
+  /* Customers section */
 
+  .customers > .container {
+    padding-left: 108px;
+    padding-right: 108px;
+  }
   .customers-list {
     column-gap: 24px;
   }
@@ -129,8 +143,29 @@
     height: 56px;
   }
 
-  /* !!==================Footer!!================== */
+  /* Footer */
 
+  .container.footer-box {
+    padding-left: 108px;
+  }
+  .footer-box {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 0px;
+    column-gap: 24px;
+    row-gap: 72px;
+  }
+  .footer-item {
+    align-items: flex-start;
+  }
+  .footer-text {
+    width: 264px;
+  }
+  .footer-socials {
+    align-items: flex-start;
+    width: 208px;
+  }
   .footer-socials-text {
     text-align: left;
   }
@@ -140,8 +175,18 @@
   .footer-form-wrap {
     flex-direction: row;
     justify-content: start;
+    gap: 24px;
   }
-  /* .footer-form-input {
+  .footer-form-input {
     width: 264px;
-  } */
+  }
+  .footer-form-submit {
+    margin: 0 0;
+  }
+  /* Backdrop and Modal */
+
+  .modal {
+    max-width: 408px;
+    padding: 72px 24px 24px;
+  }
 }

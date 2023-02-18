@@ -1,353 +1,15 @@
-/* ==================Customers section==================
+/* ==================We are We Doing================== */
 
-.customers-list {
+.projects-list {
   display: flex;
-  gap: 24px;
+  justify-content: space-between;
 }
-.customers-item {
-  flex-basis: calc((100%-120px) / 6);
-}
-.customers-link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  height: 88px;
-  border: 1px solid var(--customers-color);
-  border-radius: 4px;
-
-  transition: border-color 250ms var(--timing-function);
-}
-.customers-link:hover,
-.customers-link:focus {
-  border-color: var(--accent-color);
-}
-.customers-icon {
-  fill: var(--customers-color);
-
-  transition: fill 250ms var(--timing-function);
-}
-.customers-link:hover .customers-icon,
-.customers-link:focus .customers-icon {
-  fill: var(--accent-color);
-} */
-
-/* !!==================Footer!!================== */
-
-/* .footer {
-  padding-bottom: 100px;
-  padding-top: 100px;
-} */
-/* .footer-box {
-  display: flex;
-  align-items: flex-start;
-} */
-/* .footer-item {
-  margin-right: 120px;
-} */
-/* .footer-logo {
-  display: block;
-  margin-bottom: 16px;
-
-  color: var(--not-white-color);
-
-  font-family: "Raleway", sans-serif;
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  text-decoration: none;
-}
-.footer-logo-part {
-  color: var(--accent-color-add);
-} */
-/* .footer-text {
-  margin-bottom: 0;
-  margin-top: 0;
-  width: 264px;
-
-  color: var(--additional-not-white-color);
-
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-} */
-/* .footer-socials-text {
-  margin: 0;
-
-  font-weight: 500;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-
-  color: var(--additional-not-white-color);
-}
-
-.footer-socials-list {
-  display: flex;
-  gap: 16px;
-  margin-top: 16px;
-}
-.footer-socials-item {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-
-  background-color: rgba(255, 255, 255, 0.1);
-
-  transition: background-color 250ms var(--timing-function);
-} */
-/* .footer-socials-item:not(:last-child) {
-  margin-right: 16px;
-} */
-/* .footer-socials-item:hover,
-.footer-socials-item:focus {
-  background-color: var(--not-green-color);
-}
-.footer-socials-icon {
-  fill: var(--not-white-color);
-} */
-/* .footer-subscribe {
-  margin-left: 80px;
-}
-.footer-subscribe-text {
-  margin: 0;
-
-  font-weight: 500;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-
-  color: var(--additional-not-white-color);
-} */
-/* .footer-form-wrap {
-  margin-top: 16px;
-  display: flex;
-  justify-content: start;
-
-  gap: 24px;
-} */
-
-/* ===============Backdrop and Modal==================== */
-
-.backdrop {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-
-  background-color: rgba(46, 47, 66, 0.4);
-
-  transition: opacity 250ms var(--timing-function),
-    visibility 250ms var(--timing-function);
-}
-.backdrop.is-hidden {
-  opacity: 0;
-  visibility: 0;
-  pointer-events: none;
-}
-.modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-
-  width: 408px;
-  min-height: 576px;
-  padding: 72px 24px 24px;
-  border-radius: 4px;
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-
-  background-color: var(--white-color);
-
-  transform: translate(-50%, -50%) scale(1);
-  transition: transform 250ms var(--timing-function);
-}
-.backdrop.is-hidden .modal {
-  transform: translate(-50%, -50%) scale(0.8);
-}
-.modal-btn {
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  top: 24px;
-  right: 24px;
-  min-width: 24px;
-  min-height: 24px;
-
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 50%;
-
-  background-color: var(--additional-not-white-color);
-
-  transition: background-color 250ms var(--timing-function),
-    fill 250ms var(--timing-function);
-}
-.modal-btn-icon {
-  fill: #000000;
-}
-.modal-btn:hover {
-  background-color: var(--accent-color);
-}
-.modal-btn:hover .modal-btn-icon {
-  fill: var(--white-color);
-}
-
-/* ======================Modal form===================== */
-.contacts-details {
-  margin: 0 auto 16px;
-
-  font-weight: 500;
-  line-height: 1.5;
-  text-align: center;
-  letter-spacing: 0.02em;
-}
-.modal-form {
-  width: 360px;
-}
-.modal-form-field {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 8px;
-}
-.modal-form-field.comment {
-  height: 120px;
-  margin-bottom: 0;
-}
-.modal-form-field.privacy {
-  margin: 16px 0 24px 0;
-}
-.modal-form-label {
-  margin-bottom: 4px;
-  padding: 0;
-
-  font-size: 12px;
-  line-height: 1.33;
-  letter-spacing: 0.04em;
-
-  color: var(--customers-color);
-}
-.privacy .modal-form-label {
-  margin-bottom: 0;
-}
-
-.modal-form-input {
-  width: 100%;
-  margin: 0;
-  padding: 8px 16px 8px 38px;
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  border-radius: 4px;
-  outline: transparent;
-
-  color: currentColor;
-  background-color: transparent;
-
-  transition: border-color 250ms var(--timing-function),
-    fill 250ms var(--timing-function);
-}
-.modal-form-field.comment .modal-form-input {
-  padding-left: 16px;
-}
-.modal-form-input:focus {
-  border-color: var(--accent-color-add);
-}
-.input-wrap {
-  position: relative;
-}
-.modal-form-icon {
-  position: absolute;
-  left: 16px;
-  top: 50%;
-  transform: translateY(-50%);
-
-  fill: currentColor;
-
-  transition: fill 250ms var(--timing-function);
-}
-.modal-form-input:focus + .modal-form-icon {
-  fill: var(--accent-color-add);
-}
-.comment .modal-form-input {
-  font-size: 12px;
-  line-height: 1.33;
-  letter-spacing: 0.04em;
-}
-.modal-form-input::placeholder {
-  font-size: 12px;
-  line-height: 1.33;
-  letter-spacing: 0.04em;
-
-  color: rgba(117, 117, 117, 0.5);
-}
-
-.privacy .modal-form-label {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-}
-.checkbox {
-  width: 16px;
-  height: 16px;
-  margin-right: 8px;
-  border: 1.25px solid var(--main-text-color);
-  border-radius: 2px;
-  text-align: center;
-
-  fill: transparent;
-
-  transition: background-color 250ms var(--timing-function),
-    fill 250ms var(--timing-function), border-color 250ms var(--timing-function);
-}
-.modal-form-check:checked + .modal-form-label > .checkbox {
-  border: none;
-
-  background-color: var(--accent-color);
-  fill: var(--not-white-color);
-}
-.modal-form-check:focus + .modal-form-label > .checkbox {
-  border-color: var(--accent-color);
-}
-.modal-form-link {
-  margin-left: 4px;
-
-  text-decoration: underline;
-
-  color: var(--accent-color-add);
-}
-
-.modal-form-submit {
-  display: block;
-  min-width: 169px;
-  padding: 16px 32px;
-  margin: 0 auto;
-  border-radius: 4px;
-  border: none;
-
-  font-weight: 500;
-  line-height: 1.5;
-  letter-spacing: 0.04em;
-  text-align: center;
-
-  background-color: var(--accent-color-add);
-  color: var(--white-color);
-
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-
-  transition: background-color 250ms var(--timing-function);
-}
-.modal-form-submit:hover {
-  background-color: var(--accent-color);
-}
-
-/* !!!==================Portfolio Page==================!!! */
-/* !!==================Portfolio section!!================== */
 
 .portfolio {
   padding-top: 96px;
 }
+
+/* =====================PORTFOLIO====================== */
 
 /* ==================Filter buttons================== */
 
@@ -487,6 +149,7 @@
   }
 
   /* Features */
+
   .features-subtitle.section-subtitle {
     margin-top: 8px;
 
@@ -512,22 +175,31 @@
   .features-item > .section-text {
     font-weight: 400;
   }
-  /* ==================We are We Doing================== */
+
+  /* We are We Doing */
 
   .projects {
     display: block;
     padding-top: 0;
   }
 
-  /* ==================OurTeam================== */
+  /* OurTeam */
 
+  .team > .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
   .team-list {
     flex-wrap: nowrap;
     gap: 24px;
   }
 
-  /* ==================Customers section================== */
+  /* Customers section */
 
+  .customers > .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
   .customers-list {
     flex-wrap: nowrap;
     gap: 24px;
@@ -535,14 +207,18 @@
   .customers-item {
     flex-basis: calc((100% - 120px) / 6);
   }
-  /* !!==================Footer!!================== */
+
+  /* Footer */
 
   .section.footer {
     padding-bottom: 100px;
     padding-top: 100px;
   }
+  .container.footer-box {
+    padding-left: 15px;
+  }
   .footer-box {
-    flex-direction: row;
+    flex-wrap: nowrap;
     gap: 0;
     align-items: flex-start;
   }
