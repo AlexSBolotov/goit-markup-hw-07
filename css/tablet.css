@@ -130,4 +130,18 @@
   }
 
   /* !!==================Footer!!================== */
+
+  .footer-socials-text {
+    text-align: left;
+  }
+  .footer-subscribe-text {
+    text-align: left;
+  }
+  .footer-form-wrap {
+    flex-direction: row;
+    justify-content: start;
+  }
+  /* .footer-form-input {
+    width: 264px;
+  } */
 }
