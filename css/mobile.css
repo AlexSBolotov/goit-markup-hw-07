@@ -723,7 +723,7 @@
 }
 
 /* ==================Adress================== */
-.mod-menu-wrap {
+.mob-menu-wrap {
   display: flex;
   flex-direction: column;
   gap: 48px;
@@ -809,6 +809,12 @@
     width: 392px;
     height: 586px;
   }
+  /* @media screen and (orientation: landscape) {
+    .modal {
+      top: 70%;
+      left: 50%;
+    }
+  } */
   .mob-address-tel {
     font-size: 36px;
   }
