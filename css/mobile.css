@@ -206,7 +206,8 @@
 }
 .team-socials {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 24px;
   margin-top: 8px;
 }
 .team-socials-item {
@@ -450,7 +451,7 @@
   top: 50%;
   left: 50%;
   width: 100%;
-  max-width: 392px;
+  height: auto;
   padding: 72px 16px 24px;
   border-radius: 4px;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
@@ -734,7 +735,7 @@
 }
 .mob-address-tel {
   font-weight: 600;
-  font-size: 36px;
+  font-size: 25px;
   line-height: 1.11;
 
   color: var(--accent-color-add);
@@ -792,8 +793,9 @@
     (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    .hero { linear-gradient(var(--hero-bgc), var(--hero-bgc)),
-      background-image: url("../images/01-hero/tab-hero-bg@2x.jpg");
+    .hero {
+      background-image: linear-gradient(var(--hero-bgc), var(--hero-bgc)),
+        url("../images/01-hero/tab-hero-bg@2x.jpg");
     }
   }
   .mob-socials {
@@ -803,7 +805,11 @@
   .footer-form-input {
     width: 398px;
   }
-  .modal-form {
-    width: 360px;
+  .modal {
+    width: 392px;
+    height: 586px;
+  }
+  .mob-address-tel {
+    font-size: 36px;
   }
 }

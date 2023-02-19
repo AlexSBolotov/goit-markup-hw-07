@@ -198,7 +198,8 @@
   /* Backdrop and Modal */
 
   .modal {
-    max-width: 408px;
+    width: 408px;
+    height: 586px;
     padding: 72px 24px 24px;
   }
 }

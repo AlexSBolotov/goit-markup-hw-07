@@ -229,4 +229,7 @@
   .footer-subscribe {
     margin-left: 80px;
   }
+  .modal {
+    height: 584px;
+  }
 }
