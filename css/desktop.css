@@ -5,12 +5,11 @@
   justify-content: space-between;
 }
 
-.portfolio {
-  padding-top: 96px;
-}
-
 /* =====================PORTFOLIO====================== */
-
+.portfolio.section {
+  padding-top: 96px;
+  padding-bottom: 120px;
+}
 /* ==================Filter buttons================== */
 
 .portfolio-nav-btn {
