@@ -98,9 +98,9 @@
 .portfolio-card-descr {
   padding: 32px 16px;
 
-  border-bottom: 1px solid var(--not-white-color);
-  border-right: 1px solid var(--not-white-color);
-  border-left: 1px solid var(--not-white-color);
+  border-bottom: 1px solid var(--additional-not-white-color);
+  border-right: 1px solid var(--additional-not-white-color);
+  border-left: 1px solid var(--additional-not-white-color);
 }
 
 @media screen and (min-width: 1200px) {

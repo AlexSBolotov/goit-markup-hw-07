@@ -202,4 +202,9 @@
     height: 586px;
     padding: 72px 24px 24px;
   }
+
+  .portfolio-nav {
+    display: flex;
+    flex-wrap: nowrap;
+  }
 }

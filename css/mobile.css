@@ -151,6 +151,7 @@
 /* Features */
 
 .features-subtitle.section-subtitle {
+  font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
   text-align: center;
@@ -525,9 +526,6 @@
 
   color: var(--customers-color);
 }
-.privacy .modal-form-label {
-  margin-bottom: 0;
-}
 
 .modal-form-input {
   width: 100%;
@@ -581,8 +579,10 @@
 
 .privacy .modal-form-label {
   display: flex;
-  justify-content: flex-start;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
+  margin-bottom: 0;
 }
 .checkbox {
   width: 16px;
@@ -784,6 +784,13 @@
   fill: var(--not-white-color);
 }
 
+/* ==================Portfolio gallery================== */
+
+.portfolio-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 @media screen and (min-width: 480px) {
   .hero {
     background-image: linear-gradient(var(--hero-bgc), var(--hero-bgc)),
@@ -808,6 +815,11 @@
   .modal {
     width: 392px;
     height: 586px;
+  }
+
+  .privacy .modal-form-label {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
   }
   /* @media screen and (orientation: landscape) {
     .modal {
